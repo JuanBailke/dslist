@@ -4,6 +4,13 @@ import org.springframework.beans.BeanUtils;
 
 import com.juanbailke.dslist.entities.Game;
 
+/* Data Transfer Objects (DTO)
+ * Padrão para transferência de objetos conforme atributos necessários
+ * 
+ * Classe utilizada para método GET findByID, retornando todos os atributos de um jogo
+ * 
+ */
+
 public class GameDTO {
 	
 	private Long id;
@@ -21,6 +28,7 @@ public class GameDTO {
 	}
 	
 	public GameDTO(Game entity) {
+		//Método utilizado para implementar automaticamente os atributos completos da classe recebida
 		BeanUtils.copyProperties(entity, this);
 	}
 

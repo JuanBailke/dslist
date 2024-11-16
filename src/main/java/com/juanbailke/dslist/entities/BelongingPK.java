@@ -7,6 +7,11 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
+/* Entidade persistida no banco de dados
+ * 
+ * Classe auxiliar para receber o ID das classes Game e GameList para gerar chave composta
+ */
+
 @Embeddable
 public class BelongingPK implements Serializable{
 	private static final long serialVersionUID = 1L;

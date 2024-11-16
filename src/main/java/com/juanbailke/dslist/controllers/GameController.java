@@ -12,6 +12,12 @@ import com.juanbailke.dslist.dto.GameDTO;
 import com.juanbailke.dslist.dto.GameMinDTO;
 import com.juanbailke.dslist.services.GameService;
 
+/* Camada de Controle REST
+ * 
+ * implementadas requisições GET para busca dos dados já inseridos no banco
+ * 
+ */
+
 @RestController
 @RequestMapping(value="/games")
 public class GameController {

@@ -3,6 +3,14 @@ package com.juanbailke.dslist.dto;
 import com.juanbailke.dslist.entities.Game;
 import com.juanbailke.dslist.projections.GameMinProjection;
 
+/* Data Transfer Objects (DTO)
+ * Padrão para transferência de objetos conforme atributos necessários
+ * 
+ * Classe utilizada para método GET findAll do GameController, retornando alguns atributos de todos os jogos para tela inicial
+ * e para o método GET findById do GameListController, retornando alguns atributos dos jogos de uma lista
+ * 
+ */
+
 public class GameMinDTO {
 	
 	private Long id;

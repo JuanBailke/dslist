@@ -8,6 +8,13 @@ import org.springframework.data.jpa.repository.Query;
 import com.juanbailke.dslist.entities.Game;
 import com.juanbailke.dslist.projections.GameMinProjection;
 
+/* Camada de Repositório
+ * Implementa acesso aos dados
+ * 
+ * Criada Query searchByList para busca personalizada de dados dos jogos recebendo a lista pertencente como parâmetro
+ * Retorna uma interface na consulta, implementada na Projection
+ */
+
 public interface GameRepository extends JpaRepository<Game, Long> {
 
 	@Query(nativeQuery = true, value = """

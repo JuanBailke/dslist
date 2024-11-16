@@ -6,6 +6,12 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.juanbailke.dslist.entities.GameList;
 
+/* Camada de Repositório
+ * Implementa acesso aos dados
+ * 
+ * Criada Query updateBelongingPosition para atualizar a posição de um jogo de uma lista
+ */
+
 public interface GameListRepository extends JpaRepository<GameList, Long> {
 
 	@Modifying

@@ -16,6 +16,13 @@ import com.juanbailke.dslist.dto.ReplacementDTO;
 import com.juanbailke.dslist.services.GameListService;
 import com.juanbailke.dslist.services.GameService;
 
+/* Camada de Controle REST
+ * 
+ * implementadas requisições GET para busca dos dados já inseridos no banco
+ * e uma requisição POST para atualização de posição de um jogo na lista através do corpo JSON
+ * 
+ */
+
 @RestController
 @RequestMapping(value="/lists")
 public class GameListController {

@@ -9,6 +9,10 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+/* Entidade persistida no banco de dados
+ * 
+ */
+
 @Entity
 @Table(name="tb_game_list")
 public class GameList implements Serializable{

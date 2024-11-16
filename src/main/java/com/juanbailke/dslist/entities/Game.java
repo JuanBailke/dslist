@@ -10,6 +10,11 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+/* Entidade persistida no banco de dados
+ * 
+ * Utiliza parâmetros da anotação @Column para evitar conflito do nome da variável no banco e atualizar o tipo de dado recebido para o tamnho do texto
+ */
+
 @Entity
 @Table(name="tb_game")
 public class Game implements Serializable{

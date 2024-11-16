@@ -7,6 +7,12 @@ import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
+/* Entidade persistida no banco de dados
+ * 
+ * Classe de relação entre Game e GameList, com parâmetro exclusivo position
+ * Gerada classe auxiliar PK para gerar chave composta
+ */
+
 @Entity
 @Table(name="tb_belonging")
 public class Belonging implements Serializable{
